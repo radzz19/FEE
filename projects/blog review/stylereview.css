@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+}
+
+.header-container {
+    position: absolute;
+    width: 100%;
+    height: 10%; 
+    background-image: url("reviewimg.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1000; 
+    top: 0;
+    background-color: #b22031
+
+}
+.header-container a{
+    text-decoration: none;
+    color: #191818;
+    transition: 0.5s;
+    cursor: pointer;
+} 
+.header-container a :hover{
+    text-decoration: none;
+    color: #950d9c;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 50%; 
+}
+
+h1 {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+h1:hover {
+    animation: forwards;
+    animation-duration: 1s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    font-size: 30px;
+    margin-left: 720px;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #191818;
+    transition: 1s;
+}
+
+.menu li a:hover {
+    background-color: rgba(186, 42, 225, 0.801);
+    border-radius: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-right: 50px;
+    border: none;
+    background-color: #1a1919;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+main {
+    padding: 50px 30px;
+    max-width: 900px; 
+    margin: 100px auto 0 auto; 
+    background-color: #eed7f4; 
+    border-radius: 10px; /* Round corners */
+    box-shadow: 0 0 20px rgba(227, 22, 234, 0.581); 
+}
+
+article h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: center;
+}
+
+article h2 {
+    font-size: 24px;
+    color: #121111e8; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 80vh; 
+    height: auto; 
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+article p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+article p mark {
+    background-color: #ffeb3b; /* Highlight color */
+    color: #000;
+}
+
+article img[alt="essence of the story"] {
+    width: 300px; /* Fixed width for the secondary image */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center align the image */
+}
+
+.comment {
+    background-color: #f9f4f9; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.comment h2 {
+    font-size: 24px;
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 15px;
+    text-align: center; /* Center align heading */
+}
+
+.comment form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.comment label {
+    font-size: 18px; /* Label font size */
+    margin-bottom: 5px; /* Space below label */
+    color: #555; /* Slightly darker color for labels */
+}
+
+.comment input[type="text"],
+.comment input[type="email"],
+.comment textarea {
+    font-size: 16px; /* Font size for inputs and textarea */
+    padding: 10px; /* Padding inside inputs and textarea */
+    border: 1px solid #ccc; /* Border for inputs and textarea */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below each input */
+    width: 100%; /* Full width for inputs and textarea */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.comment textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+    height: 150px; /* Fixed height for textarea */
+}
+
+.comment input[type="submit"] {
+    background-color: #6a1b9a; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Button text size */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.comment input[type="submit"]:hover {
+    background-color: #4a0072; /* Darker color on hover */
+}
+
+.recommand {
+    padding: 20px;
+    background-color: white; /* Light background for contrast */
+    border: 4px ;
+    border-radius: 8px;
+    margin: 30px;
+    box-shadow: 0 0 10px white(180, 18, 175, 0.629);
+    
+}
+.recommand h2{
+    font-size: 24px;
+    font-style: italic  ;
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 15px;
+    text-align: center; /* Center align heading */
+}
+
+/* Style for the book list */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between book items */
+}
+
+/* Style for individual book items */
+.book {
+    background-color: white;
+    border: 1px solid #a577e9;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 200px; /* Fixed width for consistency */
+}
+
+/* Style for book images */
+.book img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style for book titles */
+.book h3 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #080808;
+}
+
+/* Style for book authors */
+.book p {
+    margin: 0;
+    color: #171616;
+}
+
+.book:hover{
+    box-shadow: 0 0 10px rgba(226, 6, 229, 0.753);
+}
+
+/* Position the recommand section */
+.recommand {
+    position: absolute;
+    max-width: 250px; /* Optional: set a max width */
+    margin: 50px auto; 
+    top: 50px;
+}
+
+
+
+.gif-container {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gif-container.right {
+    right: 0;
+}
+
+.gif-container img {
+    max-width: 100px;
+    height: auto;
+}
+

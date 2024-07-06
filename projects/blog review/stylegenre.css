@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   
+}
+
+.header-container {
+    position: absolute;
+    width: 100%;
+    height: 10%; /* Adjust height as needed for your navbar */
+    background-image: url("reviewimg.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: 1000; /* Ensure the header is above other elements */
+    top: 0;
+    background-color: #b22031
+
+}
+.header-container h1 a{
+    text-decoration: none;
+    color: #191818;
+    transition: 1s;
+    cursor: pointer;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 50%; /* Ensure it takes the full height of the header */
+}
+
+h1 {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+h1:hover {
+    animation: forwards;
+    animation-duration: 1s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    font-size: 30px;
+    margin-left: 720px;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #191818;
+    transition: 1s;
+}
+
+.menu li a:hover {
+    background-color: rgba(186, 42, 225, 0.801);
+    border-radius: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-right: 50px;
+    border: none;
+    background-color: #1a1919;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.genere {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+.introcard {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.introcard img {
+    width: 200px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.text-content {
+    max-width: 600px; /* Adjust to fit your content */
+}
+
+.text-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+
+.text-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 2em;
+    padding: 30px;
+    text-align: center;
+    font-family: "Playwrite MX", cursive;
+}

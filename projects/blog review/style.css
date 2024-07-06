@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url("landing2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.header-container h1 a{
+    text-decoration: none;
+    color: #191818;
+    transition: 1s;
+    cursor: pointer;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin-top: 16px;
+    margin-inline-start: 720px ;
+    padding: 0;
+    display: flex;
+    font-size: 30px;
+   
+}
+
+
+.menu li {
+    margin-right:20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #191818;
+    transition: 1s;
+}
+.menu li a:hover{
+    background-color: rgba(186, 42, 225, 0.801);
+    border-radius: 10px;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    margin-right:50px;
+    border: none;
+    background-color: #1a1919;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 70px 30px; /* Padding to ensure content is not hidden behind header */
+    max-width: 1000px; /* Maximum width for the content section */
+    margin:auto; /* Center align the content */
+    top: 150px;
+    text-align: center; /* Center align text */
+    background-color: #e1bcbc; /* White background for content */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(231, 129, 129, 0.559); /* Subtle shadow for depth */
+    z-index: 1;
+    position: relative;
+    transition: 0.5s;
+}
+.content:hover{
+    box-shadow: 0 0 20px rgba(231, 129, 129, 0.559); /* Subtle shadow for depth */
+    transform: translateY(-10px);
+}
+.content h2 {
+    font-size: 30px; /* Font size for the main heading */
+    color: #1a1919; /* Dark color for text */
+    margin-bottom: 50px; /* Space below the heading */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+.content p {
+    font-size: 20px; /* Font size para */
+    line-height: 1.6; 
+    color: #323030; /* Slightly lighter text color */
+    margin-bottom: 20px; /* Space below the paragraph */
+    font-family: "Playwrite MX", cursive;
+}
+
+footer {
+    background-color: #e9c3c3; 
+    color: #0a0909; 
+    padding: 20px; /* Padding around the footer content */
+    text-align: center; /* Center align text */
+    position: absolute; 
+    bottom: 0; /* Position at the bottom */
+    width: 200vh; /* Full width */
+    margin-top:300px; /* Push to the bottom of the page */
+    box-shadow: 0 0 20px rgba(172, 150, 159, 0.559);
+    border-radius: 50px;
+
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width for the footer */
+    margin: auto; /* Center align the footer */
+}
+
+.footer-content p {
+    margin: 10px 0; /* Margin for paragraphs */
+}
+
+.social-media {
+    margin: 10px 0; /* Margin for social media links */
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #111010; /* White color for social media links */
+    margin: 0 10px; /* Space between social media links */
+}
+
+.social-icon:hover {
+    text-decoration: underline; /* Underline on hover for social media links */
+}
+
+.footer-content a {
+    color: #121111; /* White color for email link */
+    text-decoration: none; /* Remove underline from email link */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline on hover for email link */
+}
+
