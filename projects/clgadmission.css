@@ -1,0 +1,87 @@
+*{
+   font-size: 25px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+body{
+    background-color: #a93698dd;
+}
+
+h1{
+    color: rgb(10, 10, 10);
+    text-decoration: underline;
+    justify-content: space-between;
+    padding: 5px;
+    width: 50%;
+}
+h3{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+
+}
+form{
+    width: 50%;
+    margin-top: 35px;
+    display:inline-block;
+    margin-left: 420px;
+    padding: 20px;
+    background-color: pink;
+    border-radius: 10px;
+    box-shadow: 15px 5px 10px rgba(207, 42, 179, 0.5);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="email"],
+form input[type="file"],
+form select{
+    width: calc(70% - 20px);
+    padding: 20px;
+    border-color:rgb(54, 32, 184) ;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 3px solid #9f1ca8;
+    border-radius: 50px;
+
+}
+
+form textarea {
+    width: calc(70% - 30px);
+    padding: 20px;
+    text-decoration: dotted;
+    border-color:green ;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 3px dotted #cfbaba;
+    border-radius: 7px;
+}
+form input[type="radio"] {
+    margin-right: 15px;
+    display: inline-flex;
+
+
+  
+}
+
+form button {
+    background-color: rgb(97, 37, 123);
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 90%;
+    font-size: 18px;
+}
+
+form button:hover {
+    background-color: #6216a5;
+}
