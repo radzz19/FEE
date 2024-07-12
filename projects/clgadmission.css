@@ -1,11 +1,13 @@
 *{
    font-size: 25px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
 
 
 }
 body{
-    background-color: #a93698dd;
+ 
+    background-color: rgb(171, 7, 138);
 }
 
 h1{
@@ -13,7 +15,8 @@ h1{
     text-decoration: underline;
     justify-content: space-between;
     padding: 5px;
-    width: 50%;
+    width: 55%;
+
 }
 h3{
     font-size: 20px;
@@ -22,12 +25,12 @@ h3{
 
 }
 form{
-    width: 50%;
+    width: 60%;
     margin-top: 35px;
     display:inline-block;
-    margin-left: 420px;
+    margin-left: 300px;
     padding: 20px;
-    background-color: pink;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 15px 5px 10px rgba(207, 42, 179, 0.5);
 }
