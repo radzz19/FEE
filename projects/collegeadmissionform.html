@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="clgadmission.css">
 </head>
 <body>
+    <header><center><h1 font-size="20px"><B><U>COLLEGE ADMISSION FORM </B></U></h1>
+        <h3>ENTER YOUR ADMISSION INFORMATION BELOW</h3></center>  
+       <hr></header>
   
     <div class="form">
-      <center><h1 font-size="20px"><B><U>COLLEGE ADMISSION FORM </B></U></h1>
-     <h3>ENTER YOUR ADMISSION INFORMATION BELOW</h3></center>  
-    <hr>
+      
        
         <form action="">
             <h1>PERSONAL DETAILS</h1>
@@ -26,20 +27,20 @@
        <h2>Government ID</h2>
         <input type="file" id="fileInput" name="fileInput">
 
-       <h2>Gender</h2>
-        <label for="radio">Male</label>
-        <input type="radio" id="gender" name="gender">
-        <label for="radio">Female</label>
-        <input type="radio" id="gender" name="gender">
-        <label for="radio">Others</label>
-        <input type="radio" id="gender" name="gender" checked>
+       <h2>Gender</h2><div style="display:inline-block">
+        <label for="radio" style="margin-left:20px;display:inline-block">Male</label>
+        <input type="radio" style="display:inline-block" id="gender" name="gender">
+        <label for="radio" style="display:inline-block">Female</label>
+        <input type="radio" style="display:inline-block" id="gender" name="gender">
+        <label for="radio" style="display:inline-block" >Others</label>
+        <input type="radio" id="gender" name="gender" checked></div>
         <h2><b>Email</b></h2>
         <!-- <label for="Email">Email </label> -->
         <input type="email" id="email" placeholder="email" size="50px">
         <h2><b>PWD</b></h2>
-        <label for="radio">YES</label>
+        <label for="radio" style="display:inline-block">YES</label>
         <input type="radio" id="PWD" name="PWD">
-        <label for="radio">NO</label>
+        <label for="radio" style="display:inline-block">NO</label>
         <input type="radio" id="PWD" name="PWD">
         <p>IF YES Upload Proof </p>
         <input type="file" id="fileInput" name="fileInput">
@@ -114,13 +115,13 @@
         <HR>
             <h1>EDUCATIONAL QUALIFICATIONS</h1>
             <h2><b>Field Opt(11th-12th)</b></h2>
-            <label for="radio">Medical</label>
+            <label for="radio" style="display:inline-block">Medical</label>
+            <input type="radio"style="display:inline-block" id="subject" name="subject">
+            <label for="radio" style="display:inline-block">Non-Medical</label>
             <input type="radio" id="subject" name="subject">
-            <label for="radio">Non-Medical</label>
+            <label for="radio"style="display:inline-block">Commerce</label>
             <input type="radio" id="subject" name="subject">
-            <label for="radio">Commerce</label>
-            <input type="radio" id="subject" name="subject">
-            <label for="radio">Arts</label>
+            <label for="radio"style="display:inline-block">Arts</label>
             <input type="radio" id="subject" name="subject">
             <h2><b>Marks Obtained</b></h2>
             <label for="marks">10th marks</label>
@@ -176,6 +177,6 @@
         </form>
 
     </div>
-
+<br><br>
 </body>
 </html>
