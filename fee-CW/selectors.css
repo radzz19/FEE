@@ -1,0 +1,41 @@
+*{
+   font-size: 20px;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#fruits{
+    color: blueviolet;
+    border: 2px dotted greenyellow;
+    background-color: rgb(126, 201, 221);
+}
+.a1{
+    color: peachpuff;
+}
+.a2{
+    color: yellow;
+}
+.a3{
+    color: green;
+    text-decoration: line-through;
+}
+ul{
+    background-color: rgb(198, 132, 132);
+    font-size: 20px;
+}
+
+p{
+    background-color: pink;
+}
+
+input[type="text"]{
+    background-color: rgb(191, 131, 255);
+}
+input[type="password"]
+    background-color: rgb(191, 131, 255);
+
+[placeholder="email"]{
+    background-color: rgb(86, 13, 165);
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
