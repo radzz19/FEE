@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyStore</title>
+</head>   
+<style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    
+    
+ body {
+    background-color: #f5f5f5;
+    margin: 0%;
+    padding: 0%;
+}
+.topnav {
+background-color: #a5c926;
+padding: 0.2%;
+
+}
+.info{
+display: flex;
+    padding: 4px;
+justify-content: space-between;
+color: white;
+}
+.contact{
+    color: white;
+    text-decoration: none;
+    margin-left: 15rem;
+}
+.contact a{
+    color: white;
+    text-decoration:underline;
+   
+}
+.social-media{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15rem;
+    gap: 1.5rem;
+
+}
+
+
+.social-media a{
+    width: 28px;
+    height: 28px;
+    font-size: 11px;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+
+}
+
+.social-media a:hover{
+    transform:scale(1.1) ;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem;
+    background-color:white;
+    box-sizing: border-box ;
+    box-shadow:15px 5px 10px rgb(242, 240, 240) ;
+    
+
+}
+
+.brandname{
+    font-size: 2rem;
+    font-family: 'Varela Round', sans-serif;
+    color: #111111;
+    margin-left: 13rem;
+    padding: 0.5rem;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    text-align:center;
+    justify-content: space-between;
+    margin-right: 20rem;
+}
+
+.nav a {
+    color:rgb(95, 93, 93);
+    text-decoration: none;
+    padding: 0.8rem;
+    align-items:center;
+    font-size: 1.5rem;
+
+}
+.nav a:hover{
+    text-decoration: underline;
+
+}
+
+.cart{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    margin-right:20rem;
+    font-size: 1.5rem;
+    color: rgb(95, 93, 93);
+    padding: 5px 10px;
+}
+.imgcart{
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
+}
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    color: rgb(95, 93, 93);
+    padding: 5px 10px;
+}
+
+.count {
+    display: inline-block;
+    height: 20px;
+    min-width: 15px;
+    padding: 2px 1px;
+    border-radius: 10px;
+    background-color: #a5c926;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+  
+}
+
+.section1{
+    position:absolute;
+    width: 100%;
+    height: 85%;
+    background-image: url("https://assets.website-files.com/5badda2935e11303a89a461e/5baddd4835e113c6299a48f5_li-tzuni-507346-unsplash.jpg");
+    background-size: cover;
+    background-position-x: 50% ;
+    background-position-y: 64%;
+    background-repeat: no-repeat;
+
+}
+.subsec1{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 570px;
+    width: 100%;
+    padding: 5% 35% ;
+    position:static ;
+    height: 60vh;
+    color: white;
+    box-sizing:content-box;
+    background: transparent;
+}
+.subtext{
+    background-color: white;
+    border-radius:  10px;
+    text-align: center;
+    padding: 5%;
+    margin-bottom: 20px;
+    display:inline-block;
+    width:100%;
+    border-radius: 4%;
+}
+
+.title{
+    color: #a5c926;
+    font-size: 16px;
+    text-align:center;
+    line-height: 16px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-weight: 400;
+
+}
+
+.subtitle{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+    color: black;
+}
+
+.CaButton{
+    background-color: #a5c926;
+    border: none;
+    padding: 15px 28px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    margin-bottom: 2%;
+    transition: transform 0.2s ease-out;
+    padding: 15px 30px;
+}
+.CaButton:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgb(187, 184, 184);
+
+}
+
+.section2{
+    background-color: #f5f5f5;
+    padding-top: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 20%;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15%;
+    padding: 50px 40px;
+    margin-right: 55%;
+    
+}
+
+.yellowcard{
+            background-color: #f3bd3f;
+            display: flex;
+            align-items: center;
+            padding: 10% 30%;
+            border-radius: 16px;
+            box-shadow: 2px 3px 4px rgb(169, 166, 166);
+            transition: transform 0.2s ease-out;
+            gap: 10px;
+
+}
+.yellowcard:hover{
+   transform: scale(1.1);
+}
+
+.yellowcard img{
+  
+  width: 300px;
+  height: auto;
+
+}
+
+
+.cardinfo{
+   
+    color: white;
+    text-align: left;
+    font-family: cursive;
+    color: white;
+    flex-grow: 1;
+
+}
+
+.cardinfo h3{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 400;
+    display: block;
+    padding: 5%;
+}
+
+.cardinfo button{
+    background-color: #f7f9f2;
+    border: none;
+    padding: 5% 6%; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: rgb(28, 26, 26);
+    margin-top: 10px;
+    transition: transform 0.2s ease-out;
+}
+
+.cardinfo button:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgb(187, 184, 184);
+}
+
+.redcard{
+            background-color: #d83f53;
+            display: flex;
+            align-items: center;
+            padding: 10% 30%;
+            border-radius: 16px;
+            box-shadow: 2px 3px 4px rgb(169, 166, 166);
+            transition: transform 0.2s ease-out;
+            gap: 10px;
+}
+
+.redcard:hover{
+  
+    transform: scale(1.1);
+}
+.redcard img{
+    width: 280px;
+    height: auto;
+}
+
+.section3{
+    background-color: #f5f5f5;
+    padding-top:10px;
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+}
+.container2{
+    width: 60%;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15%;
+    margin-right: 600px;
+    padding: 50px;
+}
+#cardtitle{
+    color: #000000;
+    font-size: 28px;
+    text-align:center;
+    line-height: 25px;
+    font-family: 'Varela Round', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-weight: 400;
+}
+.shopmorebutton{
+    margin-top: 4px;
+    padding: 2px 20px 2px 0px;
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    background-color: #f5f5f5;
+}
+.productcards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding: 30px; 
+    align-items: center;
+    background-color: #f5f5f5;
+}
+.container3{
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    gap: 5%;
+    margin-left: 90px;
+    padding: 20px;
+    align-items: center;
+}
+.container4{
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    gap: 5%;
+    margin-left: 90px;
+    padding: 20px;
+    align-items: center;
+}
+.card1{
+    background-color: white;
+    padding: 2% 4%;
+    border-radius: 16px;
+    box-shadow: 2px 3px 4px rgb(169, 166, 166);
+    transition: transform 0.3s ease-out;
+    gap: 10px; 
+}
+
+.card1:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgb(187, 184, 184);
+}
+.cardinfo1{
+    color: #2f2e2e;
+    text-align: center;
+    font-family: cursive;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight:lighter;
+    display: block;
+    padding: 5%;
+}
+
+.card2{
+    background-color: white;
+    padding: 2% 4%;
+    border-radius: 16px;
+    box-shadow: 2px 3px 4px rgb(169, 166, 166);
+    transition: transform 0.3s ease-out;
+    gap: 10px; 
+}
+
+.card2:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgb(187, 184, 184);
+}
+.card3{
+    background-color: white;
+    padding: 2% 4%;
+    border-radius: 16px;
+    box-shadow: 2px 3px 4px rgb(169, 166, 166);
+    transition: transform 0.3s ease-out;
+    gap: 10px; 
+}
+
+.card3:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgb(187, 184, 184);
+}
+.card4{
+    background-color: white;
+    padding: 2% 4%;
+    border-radius: 16px;
+    box-shadow: 2px 3px 4px rgb(169, 166, 166);
+    transition: transform 0.3s ease-out;
+    gap: 10px; 
+}
+
+.card4:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgb(187, 184, 184);
+}
+
+.cardinfo1 button{
+    background-color: #a5c926;
+    border: none;
+    padding: 5% 6%; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: rgb(28, 26, 26);
+    margin-top: 10px;
+    transition: transform 0.2s ease-out;
+}
+
+.cardinfo1 button:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgb(187, 184, 184);
+}
+
+.divider {
+    width: 70px;
+    height: 2px;
+    margin-top: 8px;
+    margin-bottom: 23px;
+    background-color: #a5c926;
+}
+#centertext{
+   margin-top: 5%;
+    text-align: center;
+    background-color: #f5f5f5;
+    font-family:'Varela Round', sans-serif ;
+
+}
+#centertext h4{
+    text-align: center;
+    color: #a5c926;
+    font-size: 20px;
+    font-family:'Varela Round', sans-serif ;
+}
+
+#centertext p{
+    color: #2f2e2e;
+    font-size: 55px;
+    font-family: 'Varela Round', sans-serif;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    padding: 10px;
+    border-bottom: #333;
+    margin-right:7%;
+    margin-left:3%;
+
+}
+#footer div ul{
+    list-style: none;
+    display: flex;
+    gap:10px;
+    
+}
+#footer div img{
+    height:20px;
+    
+}
+footer{
+    background-color: #a5c926;
+    color:white;
+}
+#footer_bottom {
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: space-between;
+    margin-right: 10px;
+    list-style: none;
+    margin-right:7%;
+    margin-left:3%;
+}
+#footer_bottom ul{
+    list-style: none;
+}
+#footer_bottom div ul{
+    display: flex;
+    gap:20px;
+    list-style:circle;
+}
+#types{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-height: fit-content;
+}
+
+
+
+</style>
+
+<body>
+<div class="page">
+        <div class="topnav">
+            <div class="info">
+                <div class="contact">Call Us:+1 213 974-5898  Email: <a href="#" >toystore@template.com</a> </div>
+                <div class="social-media">
+                    <a href="#"><img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec3cb36463d4cf4661_facebook-icon-white.svg" alt="Facebook"></a>
+                    <a href="#"><img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec5227792568635e37_twitter-icon-white.svg" alt="Twitter"></a>
+                    <a href="#"><img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec7fe624275552217c_instagram-icon-white.svg" alt="Instagram"></a>
+                    <a href="#"><img src= "https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec6e93377c0bbdba8a_pinterest-icon-white.svg" alt="Pintrest"></a>
+                    <a href="#"><img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eecfff242b7c309e311_youtube-icon.svg" alt="Youtube"></a>
+                </div>
+            </div>
+       </div>
+
+    <div class="navbar">
+         <div class="brandname">ToyStore</div>
+    <div class="nav">
+        <a href="#">Catalog</a>
+        <a href="#">Delivery</a>
+        <a href="#">About</a>
+        <a href="#">Contacts</a>
+    </div>
+     <div class="cart">
+     <div class="navigation">Cart</div>
+     <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5baf75c3bf02346640399fec_cart-icon.svg" class="cartimg">
+     <div class="count">0</div>
+    </div>
+   </div>
+</div>
+    <div class="section1">  
+        <div class="subsec1">
+            <div class="subtext">
+                <div class="title">Say Hello to ToyStore ! </div>
+                <div class="subtitle"><p>Free Ecommerce Template for Webflow</p> </div>
+                <button class="CaButton">Open Catalog</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section2">
+        <div class="container">
+            <div class="yellowcard">
+                <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5badf21356ac5470c84dfbf4_33903-2-plush-toy-transparent-image-min-p-500.png" width="300px"> 
+                <div class="cardinfo"><h3>Stuffed Animals</h3>
+                <button>Shop Now</button></div>
+            </div>
+        
+            <div class="redcard">
+                <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5badf2131f2da24c02171c72_33727-9-wooden-toy-transparent-image-min-p-500.png" width="300px">
+                <div class="cardinfo"><h3>Wodden Toys</h3>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <hr>
+    <div class="productcards">
+        <div class="container3">
+            <div class="card1">
+                <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5badf21356ac5470c84dfbf4_33903-2-plush-toy-transparent-image-min-p-500.png" width="200px">
+                <div class="cardinfo1"><h4>Teddy Bear</h4>
+                <button>$ 30.00 USD</button></div>
+            </div>
+            <div class="card2">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae124e03ef144f2b4a9bef_33837-2-plush-toy-transparent-background-min.png" width="200px">
+                <div class="cardinfo1"><h4>Mega Plush Toy</h4>
+                <button>$ 38.00 USD</button></div>
+            </div>
+            <div class="card3">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae0f7a1f2da258291736c4_33908-7-plush-toy-file-min.png" width="200px">
+                <div class="cardinfo1"><h4>Cute Dog</h4>
+                <button>$24.00 USD</button></div>
+            </div>
+            <div class="card4">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5bae0f1835e11376299a8089_33878-5-plush-toy-transparent-min.png" width="200px">
+                <div class="cardinfo1"><h4>Little Friend</h4>
+                <button>$ 27.00 USD</button></div>
+            </div>
+        </div>
+    </div>
+        <br><br>
+    <hr>
+
+    <div class="productcards">
+        <div class="container4">
+            <div class="card1">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5baf529c7a16ad5b5fd9fdf3_33727-9-wooden-toy-transparent-image-min.png" width="200px">
+                <div class="cardinfo1"><h4>Happy Flower</h4>
+                <button>$ 30.00 USD</button></div>
+            </div>
+            <div class="card2">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5baf525bbf02340f30398cb3_33505-6-wooden-toy-clipart-min.png" width="200px">
+                <div class="cardinfo1"><h4>Lift Machine</h4>
+                <button>$ 38.00 USD</button></div>
+            </div>
+            <div class="card3">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5baf522457091399591a83fe_33631-9-wooden-toy-photo-min.png" width="200px">
+                <div class="cardinfo1"><h4>Wooden Camera</h4>
+                <button>$24.00 USD</button></div>
+            </div>
+            <div class="card4">
+                <img src="https://assets.website-files.com/5baddb6a35e113da0e9a4802/5baf51fc570913c1d31a83f6_33504-4-wooden-toy-transparent-min.png" width="200px">
+                <div class="cardinfo1"><h4>Little Rabbit</h4>
+                <button>$ 27.00 USD</button></div>
+            </div>
+        </div>
+        </div>
+        <div id="centertext">
+            <h4>Made for Webflow</h4>
+            <p>Simple & Colorful Ecommerce<br> Template for Your Business</p>
+        </div>
+    </div>
+<br><br><br>
+<br><br><br><br>
+
+        <footer>
+            <div id="footer">
+            <div>
+                <ul><li>ToyStore</li></ul>
+            </div>
+    
+            <div>
+                <ul><li>Home</li><li>Catalog</li><li>Delivery</li><li>About</li><li>Contacts</li>
+            </div>
+    
+            <div>
+               <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec5227792568635e37_twitter-icon-white.svg" alt=""> 
+                <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec3cb36463d4cf4661_facebook-icon-white.svg" alt="">
+                <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec7fe624275552217c_instagram-icon-white.svg" alt="">
+                <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eec6e93377c0bbdba8a_pinterest-icon-white.svg" alt="">
+                <img src="https://assets.website-files.com/5badda2935e11303a89a461e/5bae5eecfff242b7c309e311_youtube-icon.svg" alt="">
+            </div>
+        </div>   
+            <hr width="90%">
+            <div id="footer_bottom">
+                <ul>
+                    <li>Create with love Elastic Themes</li>
+                </ul>
+            
+                <div id="headerl">
+                <ul>
+                    <li>Powered by Webflow</li>
+                    <li>Style Guide</li>
+                    <li>Licensing</li>
+                </ul>
+                </div>
+        </div>
+        </footer>
+          
+</body>
+</html> 
